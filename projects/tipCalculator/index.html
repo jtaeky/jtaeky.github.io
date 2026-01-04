@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <script src="/script.js" defer></script>
+    <title>Tip Calculator</title>
+</head>
+<body>
+    <main>
+        <section class="window">
+            <h1 class="bill-caption caption">HOW MUCH WAS YOUR BILL</h1>
+            <h1 class="tip-caption caption hidden">PERCENT TIP</h1>
+            <h1 class="final-caption caption hidden">TIP AMOUNT</h1>
+            <div class="content">
+                <div class="bill-input">
+                    <input type="text" id="bill" placeholder="0.00">
+                </div>
+                <div class="tip-percentage-input hidden">
+                    <input type="text" id="tip-percent" placeholder="00">
+                </div>
+                <div class="hidden" id="tip-display">
+                </div>
+            </div>
+        </section>
+        <button id="reset">RESET</button>
+    </main>
+</body>
+</html>

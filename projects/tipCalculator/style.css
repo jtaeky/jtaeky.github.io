@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input{
+    height: 50px;
+    width: 200px;
+    font-size: 1.5rem;
+}
+
+.window{
+    position: relative;
+    width: 600px;
+    height: 256px;
+    background-color: black;
+    background-image: url("/1d.jpg");
+    background-size: cover;
+}
+
+.content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hidden{
+    display: none;
+}
+
+/* .caption{
+    color: white;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: fit-content;
+} */
+
+.caption {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  background-color: rgba(6, 72, 6, 0.8);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.bill-input{
+    position: relative;
+}
+
+.bill-input::before {
+  content: "$";
+  font-size: 1.4rem;
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #aaa;
+  pointer-events: none;
+}
+
+.tip-percentage-input{
+    position: relative;
+}
+
+#tip-percent{
+    padding-right: 30px;
+}
+
+.tip-percentage-input::before{
+    position: absolute;
+    content: "%";
+    top:50%;
+    right: 12px;
+    transform: translateY(-50%);
+}
+
+input{
+    padding-left: 30px;
+}
+
+#reset{
+    position: absolute;
+    top: 200px;
+}
+
+#tip-display{
+    color: white;
+    font-size: 2rem;
+    background-color: green;
+    padding: 10px;
+}
