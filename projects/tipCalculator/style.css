@@ -2,6 +2,110 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body{
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+#display-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 20px;
+    padding-top: 30px; 
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border: 1px solid rgb(198, 198, 198);
+    border-radius: 20px;
+}
+
+input{
+    border: none;
+    width: 100%;
+    color: black;
+    font-size: 3rem;
+    padding: 0;
+}
+
+input:focus{
+    outline: none;
+}
+
+#input-values{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 0 20px;
+}
+
+.label{
+    margin-bottom: 10px;
+    color: grey;
+}
+
+#result{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px 20px;
+    background-color: rgb(188, 248, 255, .3);
+    border-radius: 10px;
+    color: rgb(0, 181, 194);
+}
+
+#result i{
+    color:rgb(0, 181, 194, 0.5)
+}
+#result .label{
+    color: rgb(0, 181, 194);
+}
+
+#val-plusminus{
+    display: flex;
+    gap: 20px;
+    font-size: 2rem;
+    align-items: center;
+    padding-top: 10px;
+}
+
+#val-plusminus i{
+    font-size: 1.5rem;
+}
+
+#split-wrapper,
+#total-wrapper{
+    width: 150px;   
+}
+
+#total{
+    font-size: 3rem;
+}
+
+#numpad{
+    display: grid;
+    width: 100%;
+    height: 300px;
+    grid-template-columns: repeat(3, 1fr);    
+    align-items: center;
+    justify-items: center;
+    border-top: solid rgb(198, 198, 198) 1px;
+}
+
+
+/*
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 main{
@@ -23,7 +127,7 @@ input{
     width: 600px;
     height: 256px;
     background-color: black;
-    background-image: url("/1d.jpg");
+    background-image: url("1d.jpg");
     background-size: cover;
 }
 
@@ -38,15 +142,6 @@ input{
 .hidden{
     display: none;
 }
-
-/* .caption{
-    color: white;
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    width: fit-content;
-} */
 
 .caption {
   position: absolute;
@@ -106,3 +201,5 @@ input{
     background-color: green;
     padding: 10px;
 }
+
+*/
