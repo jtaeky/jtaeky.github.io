@@ -1,0 +1,89 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: helvetica;
+}
+
+#big-poster{
+    width: 100%;
+    height: 350px;
+    background-image: url('spider.webp');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#cloneflix{
+    color: red;
+    font-size: 30px;
+    font-family: Helvetica, sans-serif;
+    font-weight: 400;
+}
+
+nav{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#bar1{
+    display: flex;
+    gap: 20px;
+}
+
+ul,
+li{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    font-family: Helvetica;
+}
+
+nav ul{
+    display: flex;
+    gap: 20px;  
+    align-items: center;
+}
+
+#buttons{
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+}
+
+button{
+    font-size: 20px;
+    padding: 10px 15px;  
+    border-radius: 6px;
+    border:none;
+}
+
+#movies{
+    padding: 20px;
+    background-color: black;
+    height: 100vh;
+    color: white;
+}
+
+.reel{
+    display: flex;
+    gap: 10px;
+}
+
+.mov{
+    width: 200px;
+    height: 150px;
+    background-color: orange;
+    border-radius:5px;
+}
+
+.reel-wrap{
+    margin: 50px 0;
+}
+
+h3{
+    margin-bottom: 20px;
+}

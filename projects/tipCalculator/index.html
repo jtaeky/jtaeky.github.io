@@ -17,17 +17,19 @@
 
     <main>
 
+        <p id="guide">User Guide: Currently works with virtual numpad clicks only. <br> Be careful not to spam the decimal point!<p>
+
         <section id="display-wrapper">
             <div id="input-values">
 
                 <div id="bill-wrapper">
                     <h3 class="label">Bill Total</h3>
-                    <input type="text" id="bill" placeholder="0.00">
+                    <input type="text" id="bill" placeholder="0.00" autocomplete="off" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" />
                 </div>
 
                 <div class="tip-percentage">
-                    <h3 class="label">Tip</h3>
-                    <input type="text" id="tip-percentage" placeholder="10%">
+                    <h3 class="label">Tip Percent</h3>
+                    <input type="text" id="tip-percentage" placeholder="0%" autocomplete="off" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" />
                 </div>
 
             </div>
@@ -37,9 +39,9 @@
                 <div id="split-wrapper">
                     <h3 class="label">Split</h3>
                     <div id="val-plusminus">
-                        <i class="fa-solid fa-circle-plus"></i>
+                        <i id="minus" class="fa-solid fa-circle-minus"></i>
                         <div id="split-num">1</div>
-                        <i class="fa-solid fa-circle-minus"></i>
+                        <i id="plus" class="fa-solid fa-circle-plus"></i>
                     </div>
                 </div>
 
@@ -52,18 +54,18 @@
         </section>
 
         <section id="numpad">
-            <div>1</div>
-            <div>2</div>
-            <div>3</div>
-            <div>4</div>
-            <div>5</div>
-            <div>6</div>
-            <div>7</div>
-            <div>8</div>
-            <div>9</div>
-            <div>.</div>
-            <div>0</div>
-            <div><i class="fa-solid fa-backspace"></i></div>          
+            <button class="num" data-value="1">1</button>
+            <button class="num" data-value="2">2</button>
+            <button class="num" data-value="3">3</button>
+            <button class="num" data-value="4">4</button>
+            <button class="num" data-value="5">5</button>
+            <button class="num" data-value="6">6</button>
+            <button class="num" data-value="7">7</button>
+            <button class="num" data-value="8">8</button>
+            <button class="num" data-value="9">9</button>
+            <button class="num" data-value=".">.</button>
+            <button class="num" data-value="0">0</button>
+            <button class="del" data-value="del"><i class="fa-solid fa-backspace"></i></button>          
         </section>
 
     </main>
@@ -71,6 +73,8 @@
 </body>
 </html>
 
+
+<!-- MOD 1 -->
 <!-- <!DOCTYPE html>
 <html lang="en">
 <head>
